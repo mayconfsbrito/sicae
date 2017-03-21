@@ -13,7 +13,8 @@
                 <div class="pull-left info">
                     <p>{{ Auth::user()->name }}</p>
                     <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i> {{ trans('adminlte_lang::message.online') }}</a>
+                    <a href="#">
+                        <i class="fa fa-circle text-success"></i> {{ trans('adminlte_lang::message.online') }}</a>
                 </div>
             </div>
         @endif
@@ -42,37 +43,44 @@
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="{{ action('CotacaoController@index') }}">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.centro_custos') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
-                    <span>{{ trans('adminlte_lang::message.cotacao') }}</span>
+                <a href="{{ action('CotacaoController@index') }}">
+                    <i class='fa fa-link'></i>
+                    <span>{{ trans('adminlte_lang::message.cotacoes') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="#">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.obras') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="#">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.produtos') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="#">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.relatorio_geral') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="#">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.relatorio_apartamento') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#"><i class='fa fa-link'></i>
+                <a href="#">
+                    <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.usuarios') }}</span>
                 </a>
             </li>

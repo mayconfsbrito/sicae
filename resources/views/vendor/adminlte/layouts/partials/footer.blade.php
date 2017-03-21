@@ -2,8 +2,12 @@
 <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-        <a href="https://github.com/acacha/adminlte-laravel"></a><b>admin-lte-laravel</b></a>. {{ trans('adminlte_lang::message.descriptionpackage') }}
+        <a href="http://intactaengenharia.com.br/" target="_blank">
+        	<b>{{ trans('adminlte_lang::message.nome_empresa_full') }}</b>
+        </a>
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2015 <a href="http://acacha.org">Acacha.org</a>.</strong> {{ trans('adminlte_lang::message.createdby') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a>. {{ trans('adminlte_lang::message.seecode') }} <a href="https://github.com/acacha/adminlte-laravel">Github</a>
+    <strong>{{ trans('adminlte_lang::message.sigla_sistema')}}</strong>
+    - {{ trans('adminlte_lang::message.nome_sistema') }}
 </footer>
+
