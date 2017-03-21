@@ -24,3 +24,5 @@ Route::group(['middleware' => 'auth'], function () {
     #adminlte_routes
 });
 Route::get('/CotacaoController/index', 'CotacaoController@index');
+Route::get('/CotacaoController/cadastrar', 'CotacaoController@cadastrar');
+Route::get('/CotacaoController/cotacao', 'CotacaoController@cotacao');

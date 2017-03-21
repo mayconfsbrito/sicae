@@ -22,4 +22,19 @@ class CotacaoController extends Controller
 	{
 		return view('cotacao/listar');
 	}
+
+	public function cadastrar()
+	{
+		return view('cotacao/cotacao');
+	}
+
+	public function cotacao()
+	{
+		$dados = [
+			
+		];
+
+		return view('cotacao/cotacao')
+			->with($dados);
+	}
 }
