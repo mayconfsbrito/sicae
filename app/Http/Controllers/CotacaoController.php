@@ -25,6 +25,9 @@ class CotacaoController extends Controller
 
 	public function cadastrar()
 	{
+		\View::share([
+			'contentheader_title' => 'TESTE'
+		]);
 		return view('cotacao/cotacao');
 	}
 
