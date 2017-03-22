@@ -9,7 +9,7 @@ Cotação
 @endsection
 
 @section('contentheader_description')
-Cadastre ou Consulte um Cotação
+Cadastre ou altere uma cotação
 @endsection
 
 
@@ -31,6 +31,14 @@ Cadastre ou Consulte um Cotação
 		                  <input type="text" class="form-control pull-right" id="datepicker" value="{{ date('d/m/Y') }}">
 		                </div>
 					</div>
+					<div class="form-group">
+		                <label>Situação</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option>Aprovada</option>
+		                  <option>Indefinida</option>
+		                  <option selected="selected">Reprovada</option>
+		            	</select>
+		            </div>
 					<div class="form-group">
 		                <label>Centro de Custo</label>
 		                <select class="form-control select2" style="width: 100%;">
@@ -218,14 +226,16 @@ Cadastre ou Consulte um Cotação
                   		<!-- <div class="col-lg-6"> -->
                   			<!-- <div class="input-group"> -->
                   				<label for='data'>Valor Total</label>
-								<input type='text' class='form-control' id='data' name='valorTotal' value="3000,00"/>
+								<input type='text' class='form-control' id='data' name='valorTotal' value="3.000,00"/>
                   			<!-- </div> -->
                   		<!-- </div> -->
 
 					</div>
 				</div>
 				<div class="box-footer">
-
+					<div>
+						<button type="button" class="btn btn-primary">Gravar</button>
+					</div>
 				</div>
 			</form>
 		</div>

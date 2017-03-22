@@ -13,3 +13,7 @@
 .blue {
 	color: #0073b7 !important;
 }
+
+label {
+    font-weight: 700;
+}
