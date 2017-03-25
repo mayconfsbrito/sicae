@@ -5,7 +5,7 @@
 		@endcomponent
 	@endif
 	<input
-		type="text"
+		type="email"
 		class="form-control"
 		placeholder="{{ isset($slot['placeholder'])
 			? $slot['placeholder']
