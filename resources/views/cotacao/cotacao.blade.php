@@ -22,43 +22,40 @@ Cadastre ou altere uma cotação
 			</div>
 			<form role='form'>
 				<div class="box-body">
-					<div class="form-group">
-						<label for='data'>Data</label>
-						<div class="input-group date">
-		                  <div class="input-group-addon">
-		                    <i class="fa fa-calendar"></i>
-		                  </div>
-		                  <input type="text" class="form-control pull-right" id="datepicker" value="{{ date('d/m/Y') }}">
-		                </div>
-					</div>
-					<div class="form-group">
-		                <label>Situação</label>
-		                <select class="form-control select2" style="width: 100%;">
-		                  <option>Aprovada</option>
-		                  <option>Indefinida</option>
-		                  <option selected="selected">Reprovada</option>
-		            	</select>
-		            </div>
-					<div class="form-group">
-		                <label>Centro de Custo</label>
-		                <select class="form-control select2" style="width: 100%;">
-		                  <option selected="selected">Acabamento</option>
-		                  <option>Estacionamento</option>
-		                  <option>Fundação</option>
-		                  <option>Financeiro</option>
-		                  <option>Hidráulica</option>
-		                  <option>Recursos Humanos</option>
-		                  <option>Transporte</option>
-		            	</select>
-		            </div>
-		            <div class="form-group">
-		                <label>Obra Destino</label>
-		                <select class="form-control select2" style="width: 100%;">
-		                  <option>Edifício Protótipo</option>
-		                  <option>Prédio Comercial da Raja</option>
-		                  <option selected="selected">Prédio Residencial X</option>
-		            	</select>
-		            </div>
+					@component('component.input.date', [
+						'label' => 'Data'
+					])
+					@endcomponent
+					@component('component.input.text', [
+						'label' => 'Fornecedor'
+					])
+					@endcomponent
+					@component('component.select.select', [
+						'label' => 'Situação',
+						'options' => $situcoes
+					])
+					@endcomponent
+					 @component('component.select.select', [
+						'label' => 'Centro de Custo',
+						'options' => [
+							'Administrativo',
+							'Obra',
+							'Planejamento',
+							'Recursos Humanos',
+							'Transporte'
+						]
+					])
+					 @endcomponent
+					 @component('component.select.select', [
+					 	'label' => 'Obra',
+					 	'options' => [
+					 		'Edifício Protótipo',
+					 		'Edifício Y',
+					 		'Edifício Z',
+					 		'Prédio Comercial X'
+					 	]
+					 ])
+					 @endcomponent
 				</div>
 				<div class="box-footer">
 

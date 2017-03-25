@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class CotacaoController extends Controller
 {
 
+	private $situacoes = ['Aprovada', 'Indefinida', 'Reprovada'];
+
 	/**
      * Create a new controller instance.
      *
@@ -20,6 +22,10 @@ class CotacaoController extends Controller
 
 	public function index()
 	{
+		$dados = [
+			'situcoes' => $this->situacoes
+		];
+
 		return view('cotacao/listar');
 	}
 
@@ -34,7 +40,7 @@ class CotacaoController extends Controller
 	public function cotacao()
 	{
 		$dados = [
-			
+			'situcoes' => $this->situacoes
 		];
 
 		return view('cotacao/cotacao')
