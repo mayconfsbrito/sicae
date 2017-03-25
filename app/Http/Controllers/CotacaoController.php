@@ -20,6 +20,11 @@ class CotacaoController extends Controller
         $this->middleware('auth');
     }
 
+	/**
+	 * Listagem de cotações
+	 *
+	 * @return     view
+	 */
 	public function index()
 	{
 		$dados = [
@@ -29,6 +34,11 @@ class CotacaoController extends Controller
 		return view('cotacao/listar');
 	}
 
+	/**
+	 * Cadastro de cotação
+	 *
+	 * @return     view
+	 */
 	public function cadastrar()
 	{
 		\View::share([
@@ -37,6 +47,11 @@ class CotacaoController extends Controller
 		return view('cotacao/cotacao');
 	}
 
+	/**
+	 * Consulta ou alteração de cotação
+	 *
+	 * @return     view
+	 */
 	public function cotacao()
 	{
 		$dados = [
