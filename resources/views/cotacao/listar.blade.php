@@ -28,7 +28,7 @@ Pesquise por cotações cadastradas
     	<div class="box-body">
     		<div class="form-group">
     			<label>Código</label>
-    			<input type="text" class="form-control" placeholder="Username" value="50">
+    			<input type="text" class="form-control" placeholder="Username" value="">
     		</div>
 	        <div class="form-group">
 	            <label>Situação</label>
@@ -77,6 +77,7 @@ Pesquise por cotações cadastradas
 						<th>Código</th>
 						<th>Data</th>
 						<th>Obra</th>
+						<th>Fornecedor</th>
 						<th>Valor Total</th>
 						<th>Situação</th>
 						<th>Visualizar</th>
@@ -85,6 +86,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>001</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Móveis Tubulares</td>
 							<td>Prédio Residencial X</td>
 							<td>3.000,00</td>
 							<td><span class="glyphicon glyphicon-remove red" title="Reprovado"></span></td>
@@ -97,6 +99,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>002</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Loja Elétrica</td>
 							<td>Prédio Comercial da Raja</td>
 							<td>316,11</td>
 							<td><span class="glyphicon glyphicon-ok green" title="Aprovado"></span></td>
@@ -109,6 +112,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>003</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Pão de Açúcar</td>
 							<td>Edifício Protótipo</td>
 							<td>61,90</td>
 							<td><span class="glyphicon glyphicon-ok green" title="Aprovado"></span></td>
@@ -121,6 +125,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>004</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Leroy Merlin</td>
 							<td>Prédio Residencial X</td>
 							<td>8.500,00</td>
 							<td><span class="glyphicon glyphicon-ok green" title="Aprovado"></span></td>
@@ -133,6 +138,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>005</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Leroy Merlin</td>
 							<td>Prédio Residencial X</td>
 							<td>1.311,00</td>
 							<td><span class="glyphicon glyphicon-remove red" title="Reprovado"></span></td>
@@ -145,6 +151,7 @@ Pesquise por cotações cadastradas
 						<tr>
 							<td>006</td>
 							<td>{{ date('d/m/Y') }}</td>
+							<td>Itatiaia</td>
 							<td>Prédio Residencial X</td>
 							<td>1.200,50</td>
 							<td><span class="glyphicon glyphicon-ok green" title="Aprovado"></span></td>
