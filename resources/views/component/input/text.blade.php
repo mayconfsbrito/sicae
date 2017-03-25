@@ -7,7 +7,17 @@
 	<input
 		type="text"
 		class="form-control"
-		placeholder="{{ $plalceholder or null }}"
-		name="{{ $name or null }}"
-		value="{{ $value or null }}" >
+		placeholder="{{ isset($slot['placeholder'])
+			? $slot['placeholder']
+			: ($plalceholder or null) }}"
+		name="{{ isset($slot['name'])
+			? $slot['name']
+			: (isset($name)
+				? $name
+				: null) }}"
+		value="{{ isset($slot['value'])
+			? $slot['value']
+			: (isset($value)
+				? $value
+				: null) }}" >
 </div>
