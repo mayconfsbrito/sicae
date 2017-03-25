@@ -1,7 +1,9 @@
 <div class="form-group">
-	@component('component.label')
-		{{ $label }}
-	@endcomponent
+	@if(isset($label))
+		@component('component.label')
+			{{ $label }}
+		@endcomponent
+	@endif
 	<input
 		type="text"
 		class="form-control"
