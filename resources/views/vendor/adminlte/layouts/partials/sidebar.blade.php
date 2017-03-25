@@ -79,7 +79,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ action('UsuariosController@index') }}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.usuarios') }}</span>
                 </a>

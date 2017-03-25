@@ -26,3 +26,5 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/CotacaoController/index', 'CotacaoController@index');
 Route::get('/CotacaoController/cadastrar', 'CotacaoController@cadastrar');
 Route::get('/CotacaoController/cotacao', 'CotacaoController@cotacao');
+Route::get('/UsuariosController/index', 'UsuariosController@index');
+Route::get('/UsuariosController/save', 'UsuariosController@save');
