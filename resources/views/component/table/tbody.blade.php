@@ -15,6 +15,11 @@
 						@slot('slot', $tb['input.mail'])
 						@endcomponent
 					</td>
+				@elseif(isset($tb['buttom']))
+					<td>
+						@component('component.buttom.buttom', $tb['buttom'])
+						@endcomponent
+					</td>
 				@else
 				@endif
 			@else
