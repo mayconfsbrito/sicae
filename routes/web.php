@@ -28,3 +28,8 @@ Route::get('/CotacaoController/cadastrar', 'CotacaoController@cadastrar');
 Route::get('/CotacaoController/cotacao', 'CotacaoController@cotacao');
 Route::get('/UsuariosController/index', 'UsuariosController@index');
 Route::get('/UsuariosController/save', 'UsuariosController@save');
+Route::get('/CustosController/index', 'CustosController@index');
+Route::get('/ObraController/index', 'ObraController@index');
+Route::get('/ProdutoController/index', 'ProdutoController@index');
+Route::get('/RelatorioSintetico/index', 'RelatorioSintetico@index');
+Route::get('/RelatorioApartamento/index', 'RelatorioApartamento@index');
