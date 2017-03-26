@@ -4,9 +4,12 @@
 ?>
 
 <div class="form-group">
-	@component('component.label')
-		{{ $label }}
-	@endcomponent
+
+	@if(isset($label))
+		@component('component.label')
+			{{ $label }}
+		@endcomponent
+	@endif
 	<select class="form-control select2" style="width: 100%;">
 		@component('component.select.options', [
 			'options' => $options,
