@@ -43,7 +43,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ action('CotacaoController@index') }}">
+                <a href="{{ action('CustosController@index') }}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.centro_custos') }}</span>
                 </a>
@@ -55,25 +55,25 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ action('ObraController@index')}}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.obras') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ action('ProdutoController@index') }}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.produtos') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ action('RelatorioSintetico@index') }}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.relatorio_geral') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ action('RelatorioApartamento@index') }}">
                     <i class='fa fa-link'></i>
                     <span>{{ trans('adminlte_lang::message.relatorio_apartamento') }}</span>
                 </a>
