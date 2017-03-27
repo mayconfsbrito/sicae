@@ -1,6 +1,9 @@
 <?php
 	$options = (isset($options) ? $options : null);
 	$value = (isset($value) ? $value : null);
+	if(isset($slot) && is_array($slot)){
+		extract($slot);
+	}
 ?>
 
 <div class="form-group">

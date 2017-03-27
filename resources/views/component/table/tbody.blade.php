@@ -15,6 +15,12 @@
 						@slot('slot', $tb['input.mail'])
 						@endcomponent
 					</td>
+				@elseif(isset($tb['select.select']))
+					<td>
+						@component('component.select.select')
+						@slot('slot', $tb['select.select'])
+						@endcomponent
+					</td>
 				@elseif(isset($tb['buttom']))
 					<td>
 						@component('component.buttom.buttom', $tb['buttom'])
