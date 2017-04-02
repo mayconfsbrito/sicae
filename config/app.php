@@ -182,6 +182,11 @@ return [
          */
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
+        /**
+         * DomPDF
+         */
+        Barryvdh\DomPDF\ServiceProvider::class,
+
     ],
 
     /*
@@ -235,6 +240,11 @@ return [
          * Acacha AdminLTE template alias
          */
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+
+        /**
+         * DomPDF
+         */
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 
